@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- QUIZ SECTION -->
+<section id="quizApp" class="card">
+  <div id="welcome">
+    <h2>Welcome to Quiz</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <h3 id="question"></h3>
+    <div id="options"></div>
+    <p>Score: <span id="score">0</span></p>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2 id="resultText"></h2>
+    <button onclick="restartQuiz()">Restart</button>
+  </div>
+</section>
+
+<!-- SGPA SECTION -->
+<section class="card">
+  <h2>SGPA Calculator</h2>
+
+  <input id="subName" placeholder="Subject Name">
+  <input id="credits" type="number" min="1" max="4" placeholder="Credits">
+  <input id="marks" type="number" placeholder="Marks">
+  <button onclick="addSubject()">Add</button>
+
+  <table>
+    <thead>
+      <tr><th>Subject</th><th>Credits</th><th>Marks</th><th>Grade</th><th>Points</th><th>Action</th></tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <h3>SGPA: <span id="sgpa">0</span></h3>
+
+  <input id="prevSGPA" placeholder="Previous SGPA">
+  <button onclick="addCGPA()">Add SGPA</button>
+  <h3>CGPA: <span id="cgpa">0</span></h3>
+
+  <button onclick="exportData()">Export</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

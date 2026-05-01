@@ -1,0 +1,42 @@
+body {
+  background: #f4f6f8;
+}
+
+header {
+  background: #0D2B4E;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #F57F17;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hidden { display:none; }
+
+#options button {
+  display:block;
+  margin:5px 0;
+  width:100%;
+}
+
+.correct { background:green; }
+.wrong { background:red; }
+
+@media(max-width:600px){
+  .card { margin:10px; }
+}
